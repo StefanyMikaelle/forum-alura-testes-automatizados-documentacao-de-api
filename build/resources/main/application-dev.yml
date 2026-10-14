@@ -1,0 +1,29 @@
+spring:
+  datasource:
+#    driverClassName: org.h2.Driver
+#    url: jdbc:h2:mem:forum
+#    username: prod
+#    password:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/forum
+    username: root
+    password: root
+
+  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    defer-datasource-initialization: false
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      show_sql : true
+#      format_sql : true
+      properties:
+        hibernate:
+          show_sql: true
+          format_sql: true
+#  h2:
+#    console:
+#      enabled: true
+
+jwt:
+  secret: 9f8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a
